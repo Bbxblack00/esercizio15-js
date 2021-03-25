@@ -1,41 +1,28 @@
-// sfruttando quando visto questa mattina a lezione, riprodurre la dropdown (menu in alto)
-//  che trovate al sito di Revolut linkato qua sotto
 
 
-function activeMenu() {
 
-  $('#start').click(function() {
 
-    $('.big-menu').addClass('visible');
 
-    $('.menu-left, .menu-right').addClass('invisible');
+function keyEventTest() {
+  var input = $('text');
 
-    $('.burger').removeClass('active');
-
+  input.keydown(function() {
+    console.log('down', input.val());
   });
 
-}
-
-function disactiveMenu() {
-
-  $('#exit').click(function() {
-
-    $('.big-menu').removeClass('visible');
-
-    $('.menu-left, .menu-right').removeClass('invisible');
-
-    $('.burger').addClass('active');
-
+  input.keyup(function() {
+    console.log('up', input.val());
   });
-
 }
 
-// .mouseenter(function-name)
+
+
+
+
 
 function init() {
 
-activeMenu();
-disactiveMenu();
+  keyEventTest();
 
 }
 
