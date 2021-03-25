@@ -6,12 +6,30 @@
 function keyEventTest() {
   var input = $('text');
 
-  input.keydown(function(event.key) {
+  // event.key ci permette di controllare
+  // anche l'inserimento di un tasto
+  // speciale tipo esc o invio, oppure il
+  // tasto super...
+  input.keydown(function(event) {
+
     // console.log(event);
     console.log('down', input.val());
+
+
+    // se si inserisce il carattere numero
+    // 13, si verifica la condizione
+    // dell'if. In questo modo possiamo
+    // modificare in live le pagine web 
+    if (event.keyCode == 13) {
+
+      var str = input.val();
+      $('#title').text(str);
+
+    }
+
   });
 
-  input.keyup(function(event.key) {
+  input.keyup(function(event) {
 
     var str = input.val();
     var lng = str.length;
@@ -27,7 +45,7 @@ function keyEventTest() {
     }
   });
 
-  input.keypress(function(event.key) {
+  input.keypress(function(event) {
 
 
     // console.log(event);
