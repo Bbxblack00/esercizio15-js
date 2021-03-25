@@ -6,12 +6,12 @@
 function keyEventTest() {
   var input = $('text');
 
-  input.keydown(function(event) {
+  input.keydown(function(event.key) {
     // console.log(event);
     console.log('down', input.val());
   });
 
-  input.keyup(function(event) {
+  input.keyup(function(event.key) {
 
     var str = input.val();
     var lng = str.length;
@@ -27,7 +27,7 @@ function keyEventTest() {
     }
   });
 
-  input.keypress(function(event) {
+  input.keypress(function(event.key) {
 
 
     // console.log(event);
