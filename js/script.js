@@ -240,21 +240,35 @@
 
 
 
-function revString() {
+// function revString() {
 
   // Scrivi una funzione che accetti una stringa come
   // argomento e la ritorni girata (es. Ciao -> oaiC)
 
-  var stringa = prompt('inserisci una stringa testuale');
-  var counter = stringa.length;
-  var revSt = '';
+//   var stringa = prompt('inserisci una stringa testuale');
+//   var counter = stringa.length;
+//   var revSt = '';
+//
+//   for (var i = stringa.length - 1; i >= 0 ; i--) {
+//     revSt += stringa[i];
+//   }
+//
+//   console.log(revSt);
+//   // console.log(counter);
+// }
 
-  for (var i = stringa.length - 1; i >= 0 ; i--) {
-    revSt += stringa[i];
+
+function dArray(arr1, arr2) {
+
+  var arrTot = [];
+
+  for (var i = 0; i < arr1.length; i++) {
+    arrTot.push(arr1[i]);
+    arrTot.push(arr2[i]);
   }
 
-  console.log(revSt);
-  // console.log(counter);
+  console.log(arrTot);
+
 }
 
 
@@ -263,7 +277,12 @@ function init() {
   // zuc1();
   // zuc2();
 
-  revString();
+  // revString();
+
+  var numeri = [1, 2, 3, 4];
+  var lettere = ['a','b','c','d'];
+
+  dArray(numeri, lettere);
 
   // var testStr = "hello";
   // testStr = testStr.slice(0, -1);
