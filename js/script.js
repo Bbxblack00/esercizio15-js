@@ -139,112 +139,131 @@
 //
 // }
 
-function zuc2() {
+// function zuc2() {
 
-  Crea 10 oggetti che rappresentano una zucchina.
-  Dividi in due array separati le zucchine che misurano
-  meno o più di 15cm.
-  Infine stampa separatamente quanto pesano i due gruppi
-  di zucchine
+  // Crea 10 oggetti che rappresentano una zucchina.
+  // Dividi in due array separati le zucchine che misurano
+  // meno o più di 15cm.
+  // Infine stampa separatamente quanto pesano i due gruppi
+  // di zucchine
 
-  var zucchine = [
-    {
-      'varieta': 'verde',
-      'peso': 32,
-      'lunghezza': 3
-    },
-    {
-      'varieta': 'rossa',
-      'peso': 24,
-      'lunghezza': 4
-    },
-    {
-      'varieta': 'gialla',
-      'peso': 33,
-      'lunghezza': 2
-    },
-    {
-      'varieta': 'marrone',
-      'peso': 22,
-      'lunghezza': 5
-    },
-    {
-      'varieta': 'quadrata',
-      'peso': 18,
-      'lunghezza': 4
-    },
-    {
-      'varieta': 'arcobaleno',
-      'peso': 3,
-      'lunghezza': 2
-    },
-    {
-      'varieta': 'Giorgia',
-      'peso': 44,
-      'lunghezza': 120
-    },
-    {
-      'varieta': 'rosa',
-      'peso': 19,
-      'lunghezza': 2
-    },
-    {
-      'varieta': 'blu',
-      'peso': 12,
-      'lunghezza': 34
-    },
-    {
-      'varieta': 'HD',
-      'peso': 65,
-      'lunghezza': 1
-    },
-  ];
+//   var zucchine = [
+//     {
+//       'varieta': 'verde',
+//       'peso': 32,
+//       'lunghezza': 3
+//     },
+//     {
+//       'varieta': 'rossa',
+//       'peso': 24,
+//       'lunghezza': 4
+//     },
+//     {
+//       'varieta': 'gialla',
+//       'peso': 33,
+//       'lunghezza': 2
+//     },
+//     {
+//       'varieta': 'marrone',
+//       'peso': 22,
+//       'lunghezza': 5
+//     },
+//     {
+//       'varieta': 'quadrata',
+//       'peso': 18,
+//       'lunghezza': 4
+//     },
+//     {
+//       'varieta': 'arcobaleno',
+//       'peso': 3,
+//       'lunghezza': 2
+//     },
+//     {
+//       'varieta': 'Giorgia',
+//       'peso': 44,
+//       'lunghezza': 120
+//     },
+//     {
+//       'varieta': 'rosa',
+//       'peso': 19,
+//       'lunghezza': 2
+//     },
+//     {
+//       'varieta': 'blu',
+//       'peso': 12,
+//       'lunghezza': 34
+//     },
+//     {
+//       'varieta': 'HD',
+//       'peso': 65,
+//       'lunghezza': 1
+//     },
+//   ];
+//
+//   var litZuc = [];
+//   var bigZuc = [];
+//   var long = 0;
+//
+//   for (var i = 0; i < zucchine.length; i++) {
+//
+//     logn = zucchine[i]['lunghezza'];
+//     if (logn > 15) {
+//       bigZuc.push(zucchine[i]);
+//     } else {
+//       litZuc.push(zucchine[i]);
+//     }
+//   }
+//
+//   var pesoTot = 0;
+//
+//   for (var i = 0; i < zucchine.length; i++) {
+//     pesoTot += zucchine[i]['peso'];
+//   }
+//
+//   var pesoBig = 0;
+//
+//   for (var i = 0; i < bigZuc.length; i++) {
+//     pesoBig += bigZuc[i]['peso'];
+//   }
+//
+//   var pesoLit = 0;
+//
+//   for (var i = 0; i < litZuc.length; i++) {
+//     pesoLit += litZuc[i]['peso'];
+//   }
+//
+//   console.log('Totale peso: ' + pesoTot);
+//   console.log('peso lunghi: ' + pesoBig);
+//   console.log('peso corti: ' + pesoLit);
+//
+// }
 
-  var litZuc = [];
-  var bigZuc = [];
-  var long = 0;
 
-  for (var i = 0; i < zucchine.length; i++) {
 
-    logn = zucchine[i]['lunghezza'];
-    if (logn > 15) {
-      bigZuc.push(zucchine[i]);
-    } else {
-      litZuc.push(zucchine[i]);
-    }
+function revString() {
+
+  // Scrivi una funzione che accetti una stringa come
+  // argomento e la ritorni girata (es. Ciao -> oaiC)
+
+  var stringa = prompt('inserisci una stringa testuale');
+  var counter = stringa.length;
+  var revSt = '';
+
+  for (var i = stringa.length - 1; i >= 0 ; i--) {
+    revSt += stringa[i];
   }
 
-  var pesoTot = 0;
-
-  for (var i = 0; i < zucchine.length; i++) {
-    pesoTot += zucchine[i]['peso'];
-  }
-
-  var pesoBig = 0;
-
-  for (var i = 0; i < bigZuc.length; i++) {
-    pesoBig += bigZuc[i]['peso'];
-  }
-
-  var pesoLit = 0;
-
-  for (var i = 0; i < litZuc.length; i++) {
-    pesoLit += litZuc[i]['peso'];
-  }
-
-  console.log('Totale peso: ' + pesoTot);
-  console.log('peso lunghi: ' + pesoBig);
-  console.log('peso corti: ' + pesoLit);
-
+  console.log(revSt);
+  // console.log(counter);
 }
-
-
 
 
 function init() {
 
   // zuc1();
-  zuc2();
+  // zuc2();
+
+  revString();
 
   // var testStr = "hello";
   // testStr = testStr.slice(0, -1);
