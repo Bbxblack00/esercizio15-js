@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+header {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100vw;
+  height: 100px;
+
+  display: flex;
+
+  background-color: purple;
+
+  justify-content: space-between;
+  align-items: center;
+}
