@@ -23,7 +23,6 @@ header {
   display: flex;
 
   background-color: purple;
-
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
