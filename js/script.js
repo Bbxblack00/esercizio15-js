@@ -423,41 +423,98 @@
 //
 // }
 
-function es1() {
-  const bikes = [
+// function es1() {
+//   const bikes = [
+//     {
+//       'nome': 'ducati',
+//       'peso': 5
+//     },
+//     {
+//       'nome': 'ktm',
+//       'peso': 5
+//     },
+//     {
+//       'nome': 'ferrari',
+//       'peso': 5
+//     }
+//   ];
+//
+//   let smallBike = {
+//     nome: '',
+//     peso: Number.MAX_SAFE_INTEGER
+//   };
+//   for (let i = 0; i < bikes.length; i++) {
+//     const bike = bikes[i]; // i=0; bike = {
+//                            //   'nome': '',
+//                            //   'peso': 5
+//                            // },
+//     let {nome, peso} = bike;
+//
+//     if (peso < smallBike) {
+//
+//         samllBike = bike;
+//
+//     }
+//   }
+//   console.log(smallBike);
+// }
+
+function randomPoint() {
+  var rnd = Math.floor(Math.random() * 100) + 1;
+
+  return rnd;
+}
+
+function es2(){
+  // Creare un array di oggetti di squadre di calcio.
+  // Ogni squadra avrà diverse proprietà:
+  // nome, punti fatti, falli subiti.
+  // Nome sarà l'unica proprietà da compilare,
+  // le altre saranno tutte settate a 0.
+
+  let teams = [
     {
-      'nome': 'ducati',
-      'peso': 5
+      'name': '',
+      'score': 0,
+      'penality': 0
     },
     {
-      'nome': 'ducati',
-      'peso': 5
+      'name': '',
+      'score': 0,
+      'penality': 0
     },
     {
-      'nome': 'ducati',
-      'peso': 5
+      'name': '',
+      'score': 0,
+      'penality': 0
+    },
+    {
+      'name': '',
+      'score': 0,
+      'penality': 0
     }
   ];
+  console.log(teams);
 
-  let smallBike = {
-    nome: '',
-    peso: Number.MAX_SAFE_INTEGER
-  };
-  for (let i = 0; i < bikes.length; i++) {
-    const bike = bikes[i];
-    let {nome, peso} = bike;
+  let sc = 0;
+  let penal = 0;
 
-    if (peso < smallBike) {
-
-        samllBike = bike;
-
-    }
+  for (let i = 0; i < teams.length; i++) {
+    sc = randomPoint();
+    penal = randomPoint();
+    const team = teams[i];
+    team['score'] = sc;
+    team['penality'] = penal;
   }
-  console.log(smallBike);
+
+
+
 }
 
 
 function init() {
+  // es1();
+  es2();
   // var arrBikes = racingBike();
   // liteBike(arrBikes);
 }
