@@ -258,31 +258,31 @@
 // }
 
 
-function dArray(arr1, arr2) {
+// function dArray(arr1, arr2) {
+//
+//   var arrTot = [];
+//
+//   for (var i = 0; i < arr1.length; i++) {
+//     arrTot.push(arr1[i]);
+//     arrTot.push(arr2[i]);
+//   }
+//
+//   console.log(arrTot);
+//
+// }
 
-  var arrTot = [];
 
-  for (var i = 0; i < arr1.length; i++) {
-    arrTot.push(arr1[i]);
-    arrTot.push(arr2[i]);
-  }
-
-  console.log(arrTot);
-
-}
-
-
-function init() {
+// function init() {
 
   // zuc1();
   // zuc2();
 
   // revString();
 
-  var numeri = [1, 2, 3, 4];
-  var lettere = ['a','b','c','d'];
-
-  dArray(numeri, lettere);
+  // var numeri = [1, 2, 3, 4];
+  // var lettere = ['a','b','c','d'];
+  //
+  // dArray(numeri, lettere);
 
   // var testStr = "hello";
   // testStr = testStr.slice(0, -1);
@@ -290,6 +290,178 @@ function init() {
 
   // keyEventTest();
 
+// }
+
+// $(document).ready(init);
+
+
+
+
+
+
+
+// function es6Vars() {
+
+  // const Costante = 10;
+  // Costante = 20;
+
+  // const Costante = [1, 2, 3];
+  //
+  // Costante.push(4);
+
+  // se provo a cambiare l'intera variabile, la costante mi ritorna un errore
+  // Costante = [1];
+
+  // console.log(Costante);
+
+
+
+
+
+  // const Obj = {
+    // 'name': ; 'Pluto'
+  // };
+
+  // Obj['name'] = 'Marco'
+  // Obj['lastname'] = 'Rossi';
+
+
+// NO
+  // const Obj = {
+  //   'name' = 'Marco',
+  //   'lastname' = 'Rossi'
+  // };
+
+  // console.log(Obj['name']);
+
+
+
+
+
+
+  // var x = 10;
+  //
+  // console.log(x, y);
+  // let y = 20;
+  // var y = 20;
+
+
+
+
+
+
+// }
+
+
+// function arrInfo(arr) {
+//     let sum = 0;
+//     for (let x=0;x<arr.length;x++) {
+//         const elem = arr[x];
+//         sum += elem;
+//     }
+//     let avg = sum / arr.length;
+//     return [sum, avg];
+// }
+// function es6Vars() {
+//     // let arr = [ 1, 2, 3 ];
+//     // let res = arrInfo(arr);
+//     // let sum = res[0];
+//     // let avg = res[1];
+//     let arr = [ 1, 2, 3 ];
+//     // let [, x, y] = arr;
+//     let x = arr[1];
+//     let y = arr[2];
+//     let obj = {
+//         'name': 'Marco',
+//         'lastname': 'Rossi'
+//     };
+//     // let { name, lastname } = obj;
+//     let name = obj['name'];
+//     let lastname = obj['lastname'];
+//     console.log(obj, name, lastname);
+// }
+
+// function racingBike() {
+//
+//   const bikes = [
+//   {
+//     'nome': 'ferrari',
+//     'peso': 7
+//   },
+//   {
+//     'nome': 'ducati',
+//     'peso': 6
+//   },
+//   {
+//     'nome': 'ktm',
+//     'peso': 8
+//   },
+//   {
+//     'nome': 'maserati',
+//     'peso': 8
+//   }
+// ];
+//
+//   return bikes;
+//
+// }
+//
+// function liteBike(arr) {
+//
+//   let weight = arr['peso'];
+//   var minore = arr[0];
+//   let temp = 0;
+//
+//   for (let i = 0; i < arr.lehgth; i++) {
+//     temp = arr[i]['peso'];
+//     if (temp < minore['peso']) {
+//       minore = temp;
+//     }
+//   }
+//
+//   console.log(`il peso more è:` + minore);
+//
+// }
+
+function es1() {
+  const bikes = [
+    {
+      'nome': 'ducati',
+      'peso': 5
+    },
+    {
+      'nome': 'ducati',
+      'peso': 5
+    },
+    {
+      'nome': 'ducati',
+      'peso': 5
+    }
+  ];
+
+  let smallBike = {
+    nome: '',
+    peso: Number.MAX_SAFE_INTEGER
+  };
+  for (let i = 0; i < bikes.length; i++) {
+    const bike = bikes[i];
+    let {nome, peso} = bike;
+
+    if (peso < smallBike) {
+
+        samllBike = peso;
+
+    }
+  }
+  console.log(smallBike);
 }
+
+
+function init() {
+  // var arrBikes = racingBike();
+  // liteBike(arrBikes);
+}
+
+
 
 $(document).ready(init);
