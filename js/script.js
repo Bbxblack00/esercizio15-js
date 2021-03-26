@@ -509,6 +509,24 @@ function es2(){
 
 
 
+  
+
+  // Usando la destrutturazione creiamo un nuovo array
+  // i cui elementi contengono solo nomi e falli subiti
+  // e stampiamo tutto in console.
+
+  const resArr = [];
+  for (let i = 0; i < teams.length; i++) {
+    const team = teams[i];
+    let { score, penality } = team;
+
+    let resObj = { score, penality };
+    ressArr.push(resObj);
+  }
+
+
+
+
 }
 
 
