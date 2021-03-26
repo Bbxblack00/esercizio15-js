@@ -449,7 +449,7 @@ function es1() {
 
     if (peso < smallBike) {
 
-        samllBike = peso;
+        samllBike = bike;
 
     }
   }
